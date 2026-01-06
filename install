@@ -1,6 +1,0 @@
-cd $HOME
-CONFIG_BACKUP=$HOME/.config_backup/
-DOTFILES=$HOME/.dotfiles-debian/ 
-mkdir $CONFIG_BACKUP 
-cp $CONFIG_BACKUP/.zshrc 
-ln -srv $DOTFILES/zsh/.zshrc $HOME/.zshrc 
