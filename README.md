@@ -6,5 +6,8 @@ Includes the apps:
 
 ## Install the dotfiles
 ```shell
-git clone git@github.com:jorgemontes/.dotfiles-debian.git ~/.dotfiles
+git clone git@github.com:jorgemontes/.dotfiles-debian.git ~/dotfiles
+
+## Install A module
+use stow to install the selected module
 ```
