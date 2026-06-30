@@ -6,11 +6,20 @@ Includes the apps:
 - `vim`
 - `neofetch`
 - `gnucash`
+- `p10k` (Powerlevel10k)
 
 ## Install the dotfiles
 ```shell
 git clone git@github.com:jorgemontes/.dotfiles-debian.git ~/dotfiles
+cd ~/dotfiles
+./install.sh
 ```
+
+The install script will:
+- Install prerequisites (stow, zsh, vim, neofetch, git, curl)
+- Install Oh My Zsh
+- Install Powerlevel10k theme
+- Stow all packages (zsh, vim, neofetch, p10k)
 
 ## Using GNU Stow
 
@@ -26,6 +35,8 @@ internal structure mirrors `$HOME`.
 │   └── .zshrc          ->  ~/.zshrc
 ├── vim/
 │   └── .vimrc          ->  ~/.vimrc
+├── p10k/
+│   └── .p10k.zsh       ->  ~/.p10k.zsh
 └── neofetch/
     └── .config/
         └── neofetch/   ->  ~/.config/neofetch/
